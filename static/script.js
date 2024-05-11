@@ -11,8 +11,8 @@ let config = {
   // magnification with which the map will start
   const zoom = 18;
   // co-ordinates
-  const lat = 52.22977;
-  const lng = 21.01178;
+  const lat = -23.55500651;
+  const lng = -46.72917004;
   
   // calling map
   const map = L.map("map", config).setView([lat, lng], zoom);
