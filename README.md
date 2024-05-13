@@ -31,7 +31,7 @@ Isso iniciará o servidor na porta 9090 por padrão. Você pode acessar o aplica
 ## Current-maps
 
 ### Descrição
-- O script abre o arquivo NetCDF e extrai metadados e variáveis como latitude, longitude, profundidade, tempo, u (velocidade para leste) e v (velocidade para o norte).
+- O script abre o arquivo NetCDF e extrai metadados e variáveis como latitude, longitude, profundidade, tempo, u (velocidade zonal) e v (velocidade para meridional).
 - Em seguida, converte as coordenadas de longitude para o formato desejado (graus a leste) e cria um objeto Basemap para visualização.
 - O script gera um gráfico de vetores de corrente oceânica em um mapa, com preenchimento de costa e continente.
 - Certifique-se de ajustar os parâmetros do Basemap, como limites de latitude e longitude, de acordo com a área geográfica dos seus dados.
