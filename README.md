@@ -28,4 +28,15 @@ Isso iniciará o servidor na porta 9090 por padrão. Você pode acessar o aplica
 - `static/`: Este diretório contém os arquivos estáticos do aplicativo, como HTML, CSS e JavaScript.
 - `web.py` e `view.py`: primeiros tutoriais seguidos
 
+## Current-maps
+
+### Descrição
+- O script abre o arquivo NetCDF e extrai metadados e variáveis como latitude, longitude, profundidade, tempo, u (velocidade para leste) e v (velocidade para o norte).
+- Em seguida, converte as coordenadas de longitude para o formato desejado (graus a leste) e cria um objeto Basemap para visualização.
+- O script gera um gráfico de vetores de corrente oceânica em um mapa, com preenchimento de costa e continente.
+- Certifique-se de ajustar os parâmetros do Basemap, como limites de latitude e longitude, de acordo com a área geográfica dos seus dados.
+
+### Notas
+- Modifique os limites de longitude e latitude (`llcrnrlon`, `llcrnrlat`, `urcrnrlon`, `urcrnrlat`) no construtor do Basemap para se adequar à sua região geográfica de interesse.
+- Descomente a linha `map.quiver()` para plotar vetores em um ponto específico no mapa. Ajuste os índices para plotar vetores em diferentes locais.
 
