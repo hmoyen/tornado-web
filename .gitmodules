@@ -1,1 +1,4 @@
 
+[submodule "current-maps"]
+	path = current-maps
+	url = git@github.com:hmoyen/current-maps.git
