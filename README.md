@@ -2,6 +2,13 @@
 
 Este é um simples exemplo de aplicativo web usando o framework Tornado em Python.
 
+## Cloning this Repository
+
+To clone this repository, and all of its submodules, use the following command:
+```
+git clone --recursive git@github.com:hmoyen/tornado-web.git
+```
+
 # Working with Submodules
 
 Submodules are, simply put, repositories within repositories. In order to work with them, say, to commit, push, pull, etc. you can't just commit to the sky_ws repository, as all the changes you've made to the submodules won't be commited - instead, you have to either commit each submodule individually, or use the following command to do all the submodules at once.
