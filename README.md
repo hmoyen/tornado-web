@@ -57,13 +57,20 @@ Isso iniciará o servidor na porta 9090 por padrão. Você pode acessar o aplica
 
 ## Current-maps
 
-### Descrição
-- O script abre o arquivo NetCDF e extrai metadados e variáveis como latitude, longitude, profundidade, tempo, u (velocidade zonal) e v (velocidade para meridional).
-- Em seguida, converte as coordenadas de longitude para o formato desejado (graus a leste) e cria um objeto Basemap para visualização.
-- O script gera um gráfico de vetores de corrente oceânica em um mapa, com preenchimento de costa e continente.
-- Certifique-se de ajustar os parâmetros do Basemap, como limites de latitude e longitude, de acordo com a área geográfica dos seus dados.
+### Arquivos:
 
-### Notas
-- Modifique os limites de longitude e latitude (`llcrnrlon`, `llcrnrlat`, `urcrnrlon`, `urcrnrlat`) no construtor do Basemap para se adequar à sua região geográfica de interesse.
-- Descomente a linha `map.quiver()` para plotar vetores em um ponto específico no mapa. Ajuste os índices para plotar vetores em diferentes locais.
+1. **read.py:** Este script é responsável por ler o arquivo `.p3d` e gerar arquivos de velocidades e posições do campo vetorial das correntes. Ele extrai os dados do arquivo `.p3d` e cria arquivos de texto contendo as informações necessárias para plotar o campo vetorial.
+
+2. **test_proj.py:** Este script utiliza os arquivos de velocidades e posições gerados pelo `read.py` para plotar o campo vetorial das correntes em um mapa. Ele utiliza a biblioteca `Basemap` do `matplotlib` para criar um mapa e `quiver` para representar as setas do campo vetorial.
+
+### Instruções de Uso:
+
+1. **read.py:**
+   - Certifique-se de ter o arquivo `.p3d` no mesmo diretório que o script `read.py`.
+   - Execute o script `read.py`. Ele irá ler o arquivo `.p3d` e gerar os arquivos de velocidades (`extracted_velx.txt` e `extracted_vely.txt`) e posições (`x_values.txt` e `y_values.txt`) do campo vetorial das correntes.
+
+2. **test_proj.py:**
+   - Certifique-se de ter os arquivos de velocidades (`extracted_velx.txt` e `extracted_vely.txt`) e posições (`x_values.txt` e `y_values.txt`) gerados pelo `read.py`, bem como o arquivo `test_proj.py`, no mesmo diretório.
+   - Execute o script `test_proj.py`. Ele irá ler os arquivos de velocidades e posições, plotar o campo vetorial das correntes em um mapa e exibir o mapa resultante.
+
 
