@@ -67,10 +67,10 @@ Isso iniciará o servidor na porta 9090 por padrão. Você pode acessar o aplica
 
 1. **read.py:**
    - Certifique-se de ter o arquivo `.p3d` no mesmo diretório que o script `read.py`.
-   - Execute o script `read.py`. Ele irá ler o arquivo `.p3d` e gerar os arquivos de velocidades (`extracted_velx.txt` e `extracted_vely.txt`) e posições (`x_values.txt` e `y_values.txt`) do campo vetorial das correntes.
+   - Execute o script `read.py`. Ele irá ler o arquivo `.p3d` e gerar os arquivos de velocidades (`extracted_velx.txt` e `extracted_vely.txt`) e posições (`extracted_posx.txt` e `extracted_posy.txt`) do campo vetorial das correntes.
 
 2. **test_proj.py:**
-   - Certifique-se de ter os arquivos de velocidades (`extracted_velx.txt` e `extracted_vely.txt`) e posições (`x_values.txt` e `y_values.txt`) gerados pelo `read.py`, bem como o arquivo `test_proj.py`, no mesmo diretório.
+   - Certifique-se de ter os arquivos de velocidades (`extracted_velx.txt` e `extracted_vely.txt`) e posições (`extracted_posx.txt` e `extracted_posy.txt`) gerados pelo `read.py`, bem como o arquivo `test_proj.py`, no mesmo diretório.
    - Execute o script `test_proj.py`. Ele irá ler os arquivos de velocidades e posições, plotar o campo vetorial das correntes em um mapa e exibir o mapa resultante.
 
 
