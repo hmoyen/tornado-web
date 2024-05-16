@@ -1,3 +1,6 @@
 tornado
 netCDF4
 basemap
+numpy
+pyproj
+matplotlib
